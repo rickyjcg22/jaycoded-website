@@ -1,38 +1,457 @@
-.App {
+/* HEADER */
+
+#brand__logoId {
+  width: 200px;
+}
+div.space {
+  flex: 1;
+}
+
+a.nav__link.nav-link {
+  display: flex;
+  justify-content: right;
+  color: #184c57;
+  font-weight: 600;
+  padding: 8px 18px !important;
+}
+
+a.nav__link.nav-link.active {
+  display: flex;
+  justify-content: right;
+  color: #184c57;
+  font-weight: 600;
+  padding: 8px 18px !important;
+}
+
+a.nav__link.nav-link:hover {
+  border-bottom:#184c57 0.5px solid;
+}
+
+nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
+  background-color: #f5f5f5 !important;
+}
+
+/* CONTENT */
+
+div.main {
+  background-color:#f5f5f5;
+  color:#dde2e8;
+}
+
+/* HOME */
+.div.main {
+  position: relative;
+  overflow: hidden; /* Hide overflow to ensure background image doesn't extend beyond the container */
+  width: 100%;
+  height: auto; /* This allows the banner to adjust its height based on content */
+}
+
+.home__bannerImg {
+  width: 100%; /* Ensure the image covers the entire container */
+  height: auto;
+  display: block; /* Remove extra space below inline images */
+}
+
+.home__bannerContent {
+  position: absolute;
+  transform: translate(0%, -200%);
+  z-index: 1;
   text-align: center;
+  color: #fff;
+  width: 100%; /* Adjust the width as needed */
+  padding: 20px; /* Add padding to your banner content */
+  box-sizing: border-box; /* Include padding in the width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn__spacer {
+  width: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 50px;
+  border: #f5f5f5 3px solid;
+  font-size: x-large;
+  transition: background-color 0.01s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.btn1:hover {
+  border: none;
+  background-color:#f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+div.btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 50px;
+  border: #184c57 3px solid;
+}
+
+div.btn2:hover {
+  border: none;
+  background-color: #184c57;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+a.link__item {
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.link__text1 {
+  color: #f5f5f5;
+}
+
+.link__text1:hover {
+  color: #184c57;
+}
+
+.link__text2 {
+  color: #184c57;
+}
+
+.link__text2:hover {
+  color: #f5f5f5;
+}
+
+.home__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #184c57;
+  padding-top: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.intro__title {
+  width: 50%;
+  font-size: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro__text {
+  width: 50%;
+  padding-top: 50px;
+  font-size: 1.6rem;
+}
+
+.home__service1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+  padding-top: 200px;
+}
+
+.home__service2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+}
+
+.service-a {
+  flex: 1;
+  margin: 5px;
+  height: 580px;
+}
+
+.service-b {
+  flex: 1;
+  margin: 5px;
+  height: 290px;
+}
+
+.service-a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.service-b::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.service1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/data.jpg') ;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/webapp.jpg') ;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/eda.jpg') ;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/ml.jpg') ;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/frontend.jpg') ;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/backend.jpg') ;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service__title1 {
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  z-index: 1000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.service__title2 {
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  z-index: 1000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 200px 0 10px 0;
+}
+
+.home__technology {
+  padding: 100px 0;
+}
+
+div.span-line {
+  border-top: #184c57 1px solid;
+}
+
+.home__technology1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__technology2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.technology__item1 {
+  width: 100px;
+  margin: auto 20px;
+}
+
+.technology__item1:hover {
+  transform: scale(1.5);
+}
+
+div.about-me {
+  width: 80%;
+}
+
+div.contact {
+  width: 80%;
+}
+
+div.home__about {
+  display: flex;
+  padding: 100px 0;
+}
+
+div.home__contact {
+  display: flex;
+  padding: 100px 0;
+}
+
+h1.about-me__title {
+  font-size: 36px;
+}
+
+p.about-me__par {
+  padding-top: 50px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+p.contact__par {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+div.home__about-side {
+  margin-right: 100px;
+}
+
+div.home__contact-side {
+  flex: 1;
+  margin-right: 100px;
+}
+
+div.home__contact-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-right: 100px;
+}
+
+img.self-photo {
+  width: 400px;
+  transform: rotate(7.5deg);
+}
+
+a.emailButton {
+  padding: 20px;
+  font-size: 30px;
+  text-decoration: underline;
+  border: none;
+  color: #184c57;
+  background-color: #f5f5f5;
+}
+
+.right-arrow {
+  width: 50px;
+}
+
+/* PROJECTS */
+div.projects__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0;
+  background-color: #f5f5f5;
+  color: #184c57;
+}
+
+h1.under-construction {
+  font-size: 40px;
+}
+
+p.under-construction {
+  font-size: 1.6rem;
+  width: 75%;
+  padding: 50px 0;
+  text-align: center;
+}
+img.under-construction {
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #f5f5f5;
+}
+
+div.footer__main {
+  display: flex;
+  width: 80%;
+  border-top: #184c57 1px solid;
+  padding-top: 20px;
+  padding-left: 50px;
+  margin: 20px auto;
+  font-size: small;
+}
+
+img.footer__logo {
+  width: auto;
+  height: 20px;
+  margin-right: 10px;
+}
+
+p.footer__p {
+  margin: 0;
+}
+
+.footer__spacer {
+  flex-grow: 1;
+}
+p.footer__follow {
+  font-weight: bold;
+  font-size: medium;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.social__img {
+  width: 20px;
+  margin: 0 5px;
 }
